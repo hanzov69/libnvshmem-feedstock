@@ -82,16 +82,16 @@ outputs:
         - test -f $PREFIX/lib/nvshmem_bootstrap_shmem.so.3.0.0
         - test -L $PREFIX/lib/nvshmem_bootstrap_uid.so.3
         - test -f $PREFIX/lib/nvshmem_bootstrap_uid.so.3.0.0
-        - test -L $PREFIX/lib/nvshmem_transport_ibdevx.so.5
-        - test -f $PREFIX/lib/nvshmem_transport_ibdevx.so.5.0.0
-        - test -L $PREFIX/lib/nvshmem_transport_ibgda.so.5
-        - test -f $PREFIX/lib/nvshmem_transport_ibgda.so.5.0.0
-        - test -L $PREFIX/lib/nvshmem_transport_ibrc.so.5
-        - test -f $PREFIX/lib/nvshmem_transport_ibrc.so.5.0.0
-        - test -L $PREFIX/lib/nvshmem_transport_libfabric.so.5
-        - test -f $PREFIX/lib/nvshmem_transport_libfabric.so.5.0.0
-        - test -L $PREFIX/lib/nvshmem_transport_ucx.so.5
-        - test -f $PREFIX/lib/nvshmem_transport_ucx.so.5.0.0
+        - test -L $PREFIX/lib/nvshmem_transport_ibdevx.so.6
+        - test -f $PREFIX/lib/nvshmem_transport_ibdevx.so.6.0.0
+        - test -L $PREFIX/lib/nvshmem_transport_ibgda.so.6
+        - test -f $PREFIX/lib/nvshmem_transport_ibgda.so.6.0.0
+        - test -L $PREFIX/lib/nvshmem_transport_ibrc.so.6
+        - test -f $PREFIX/lib/nvshmem_transport_ibrc.so.6.0.0
+        - test -L $PREFIX/lib/nvshmem_transport_libfabric.so.6
+        - test -f $PREFIX/lib/nvshmem_transport_libfabric.so.6.0.0
+        - test -L $PREFIX/lib/nvshmem_transport_ucx.so.6
+        - test -f $PREFIX/lib/nvshmem_transport_ucx.so.6.0.0
 
   - name: libnvshmem-dev
     build:

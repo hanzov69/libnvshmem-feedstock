@@ -13,3 +13,9 @@ github:
   tooling_branch_name: main
 provider:
   linux_aarch64: default
+remote_ci_setup:
+  # Pin conda-build to the 26.3.x line. conda-build 26.4/26.5 break the
+  # cross-compiled linux-aarch64 nvshmem4py wheel link (liblto_plugin.so not
+  # found); 26.3.0 is the version the last green build (3.6.5) used.
+  - "conda-forge-ci-setup=4"
+  - "conda-build>=26.3,<26.4"
