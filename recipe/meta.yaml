@@ -134,7 +134,7 @@ outputs:
         - cuda-version {{ cuda_compiler_version }}  # [cuda_compiler_version != "None"]
         - cuda-cudart-dev
         - libpciaccess
-        - libhwloc      # [linux64 and (cuda_compiler_version or "").startswith("13")]
+        - libhwloc
       run:
         - {{ pin_compatible("cuda-version", min_pin="x", max_pin="x") }}
         - {{ pin_subpackage("libnvshmem" ~ soname, exact=True) }}
